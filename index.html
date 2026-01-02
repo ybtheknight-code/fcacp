@@ -708,10 +708,9 @@
         </div>
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         function animateScore() {
             const el = document.getElementById('score-counter');
-            if (!el) return;
             const start = 300, end = 850, duration = 3000, pauseEnd = 2000, pauseStart = 1000;
             let startTime = null;
             function update(ts) {
@@ -736,12 +735,3 @@
         document.querySelectorAll('a[href^="#"]').forEach(a => {
             a.addEventListener('click', e => {
                 e.preventDefault();
-                const target = document.querySelector(a.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
-</body>
-</html>
