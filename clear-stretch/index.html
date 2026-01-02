@@ -59,9 +59,41 @@
             font-size: 0.7rem;
         }
         
+        /* Side Sticky Text CREDIT - Mobile Only */
+        .side-sticky-cta {
+            display: none;
+        }
+        
         @media (max-width: 768px) {
             .nav-scarcity {
                 display: none;
+            }
+            .nav-cta {
+                display: none;
+            }
+            .side-sticky-cta {
+                display: block;
+                position: fixed;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 100;
+            }
+            .side-sticky-cta a {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                padding: 0.75rem 1rem;
+                background: linear-gradient(135deg, var(--blue-primary), #1e40af);
+                color: white;
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 0.8rem;
+                border-radius: 12px 0 0 12px;
+                box-shadow: -4px 0 20px rgba(0,0,0,0.15);
+                writing-mode: vertical-rl;
+                text-orientation: mixed;
+                transform: rotate(180deg);
             }
             .trust-badges {
                 gap: 0.75rem;
@@ -292,6 +324,13 @@
     </style>
 </head>
 <body>
+    
+    <!-- Side Sticky Text CREDIT - Mobile Only -->
+    <div class="side-sticky-cta">
+        <a href="sms:3349389171?body=CREDIT">
+            📱 Text CREDIT
+        </a>
+    </div>
     
     <!-- Trust Badges -->
     <div class="trust-badges">
