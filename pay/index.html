@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE CLEAR STRETCH | FCACP Credit Restoration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --gold-dark: #B8960C;
+            --navy: #1e3a5f;
+            --navy-dark: #0f2744;
+            --text: #1a1a2e;
+            --text-muted: #64748b;
+            --bg: #fafafa;
+            --white: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .logo {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--navy);
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .logo span {
+            color: var(--gold);
+        }
+        
+        .tagline {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        
+        /* Hero Card */
+        .hero-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.4rem 0.8rem;
+            border-radius: 100px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+        
+        .title {
+            font-size: 2rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 0.75rem;
+        }
+        
+        .title .gold { color: var(--gold); }
+        .title .blue { color: var(--navy); }
+        
+        .description {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Price Box */
+        .price-box {
+            background: linear-gradient(135deg, var(--navy), var(--navy-dark));
+            border-radius: 16px;
+            padding: 1.5rem;
+            color: white;
+            text-align: center;
+        }
+        
+        .price-main {
+            font-size: 2.5rem;
+            font-weight: 800;
+        }
+        
+        .price-detail {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-top: 0.25rem;
+        }
+        
+        .price-breakdown {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .week-pill {
+            background: rgba(255,255,255,0.15);
+            padding: 0.4rem 0.75rem;
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        
+        /* Included Section */
+        .included {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 1.75rem;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+            margin-bottom: 1.5rem;
+        }
+        
+        .included h3 {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+        
+        .included-list {
+            list-style: none;
+        }
+        
+        .included-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.6rem 0;
+            font-size: 0.9rem;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        
+        .included-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .check {
+            width: 20px;
+            height: 20px;
+            background: linear-gradient(135deg, #22c55e, #16a34a);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        
+        .check svg {
+            width: 12px;
+            height: 12px;
+            color: white;
+        }
+        
+        /* Guarantee */
+        .guarantee {
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            border-radius: 12px;
+            padding: 1rem 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .guarantee-icon {
+            font-size: 1.5rem;
+        }
+        
+        .guarantee-text {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #92400e;
+        }
+        
+        /* Payment Section */
+        .payment-section {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+            margin-bottom: 1.5rem;
+        }
+        
+        .payment-section h3 {
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+            color: var(--text);
+        }
+        
+        #paypal-button-container-P-2FA18426ND782223TNFL6QAA {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        
+        /* Trust Badges */
+        .trust-row {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+        
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+        
+        .trust-item svg {
+            width: 16px;
+            height: 16px;
+            color: #22c55e;
+        }
+        
+        /* Contact */
+        .contact {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--white);
+            border-radius: 20px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+        }
+        
+        .contact p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+        }
+        
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--navy);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        
+        .contact-link:hover {
+            color: var(--gold);
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        .footer p {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+        
+        .footer a {
+            color: var(--navy);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">F<span>C</span>A<span>C</span>P</div>
+            <div class="tagline">Federal Credit Advocacy & Compliance Partners</div>
+        </div>
+        
+        <!-- Hero Card -->
+        <div class="hero-card">
+            <div class="service-badge">Credit Restoration</div>
+            <h1 class="title">THE <span class="gold">CLEAR</span> <span class="blue">STRETCH</span></h1>
+            <p class="description">Full credit restoration with custom dispute letters for every negative item on your report. Unlimited rounds until we get results.</p>
+            
+            <div class="price-box">
+                <div class="price-main">$500</div>
+                <div class="price-detail">Total Investment</div>
+                <div class="price-breakdown">
+                    <span class="week-pill">Week 1: $125</span>
+                    <span class="week-pill">Week 2: $125</span>
+                    <span class="week-pill">Week 3: $125</span>
+                    <span class="week-pill">Week 4: $125</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- What's Included -->
+        <div class="included">
+            <h3>What's Included</h3>
+            <ul class="included-list">
+                <li>
+                    <span class="check"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                    <span>Full 3-bureau credit report analysis</span>
+                </li>
+                <li>
+                    <span class="check"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                    <span>Custom dispute letters for ALL negative items</span>
+                </li>
+                <li>
+                    <span class="check"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                    <span>Unlimited dispute rounds until completion</span>
+                </li>
+                <li>
+                    <span class="check"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                    <span>Direct communication with your specialist</span>
+                </li>
+                <li>
+                    <span class="check"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                    <span>FCRA & Metro 2 compliance expertise</span>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Guarantee -->
+        <div class="guarantee">
+            <span class="guarantee-icon">🛡️</span>
+            <span class="guarantee-text">No Deletions = No Final Payment. We only succeed when you do.</span>
+        </div>
+        
+        <!-- Payment Section -->
+        <div class="payment-section">
+            <h3>Start Your Credit Restoration</h3>
+            <div id="paypal-button-container-P-2FA18426ND782223TNFL6QAA"></div>
+        </div>
+        
+        <!-- Trust Badges -->
+        <div class="trust-row">
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                CROA Compliant
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                Secure Payment
+            </div>
+            <div class="trust-item">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Results-Based
+            </div>
+        </div>
+        
+        <!-- Contact -->
+        <div class="contact">
+            <p>Questions before you start?</p>
+            <a href="tel:3349389171" class="contact-link">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                (334) 938-9171
+            </a>
+            <a href="mailto:support@knightfin.org" class="contact-link" style="margin-top: 0.5rem; font-size: 0.95rem;">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                support@knightfin.org
+            </a>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>Federal Credit Advocacy & Compliance Partners<br>
+            <a href="https://fcacp.org">fcacp.org</a> · Tuskegee, Alabama<br><br>
+            By subscribing, you agree to our service terms. Subscription bills weekly for 4 weeks.</p>
+        </div>
+    </div>
+    
+    <!-- PayPal Script -->
+    <script src="https://www.paypal.com/sdk/js?client-id=ATu37jGeO0-iGJU021IwMepTydlnlsJ7F9Xd8dHwnP5fAJUhvXMMA6BltRPOYbxd8538LJ_fSaJg-Fbu&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+    <script>
+        paypal.Buttons({
+            style: {
+                shape: 'pill',
+                color: 'gold',
+                layout: 'vertical',
+                label: 'subscribe'
+            },
+            createSubscription: function(data, actions) {
+                return actions.subscription.create({
+                    plan_id: 'P-2FA18426ND782223TNFL6QAA'
+                });
+            },
+            onApprove: function(data, actions) {
+                // Redirect to thank you or show success message
+                document.querySelector('.payment-section').innerHTML = '<div style="text-align:center;padding:2rem;"><h3 style="color:#22c55e;margin-bottom:0.5rem;">✓ Payment Successful!</h3><p style="color:#64748b;font-size:0.9rem;">Subscription ID: ' + data.subscriptionID + '</p><p style="color:#64748b;font-size:0.9rem;margin-top:1rem;">We\'ll be in touch within 24 hours to get started on your credit restoration.</p></div>';
+            }
+        }).render('#paypal-button-container-P-2FA18426ND782223TNFL6QAA');
+    </script>
+</body>
+</html>
