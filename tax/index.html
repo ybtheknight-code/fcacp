@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Resolution & IRS Debt Help | FCACP™ | Raheem Sanders</title>
+    <meta name="description" content="Free Tax Lien & IRS Debt Analysis. Licensed tax professional helping you resolve tax debt, remove liens, and get fresh start. Based in Alabama, serving nationwide.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --navy: #0f1c2e;
+            --navy-light: #1a2d47;
+            --gold: #c9a227;
+            --gold-light: #e3b830;
+            --white: #ffffff;
+            --off-white: #f8f9fa;
+            --gray-100: #f1f3f5;
+            --gray-200: #e9ecef;
+            --gray-500: #6c757d;
+            --gray-700: #495057;
+            --gray-900: #212529;
+            --green: #28a745;
+            --green-light: #d4edda;
+            --blue: #2563eb;
+            --blue-light: #dbeafe;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--off-white);
+            color: var(--gray-900);
+            line-height: 1.7;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        /* HEADER - CENTERED LOGO */
+        .header {
+            background: var(--navy);
+            padding: 1.5rem 2rem;
+            text-align: center;
+        }
+        .header-logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .header-logo img {
+            height: 60px;
+            width: auto;
+            border-radius: 8px;
+        }
+        .header-logo-text {
+            text-align: left;
+        }
+        .header-logo-text h1 {
+            color: var(--gold);
+            font-size: 1.75rem;
+            font-weight: 800;
+        }
+        .header-logo-text span {
+            color: white;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        /* CENTERED PROFILE PHOTO */
+        .profile-section {
+            margin-bottom: 2.5rem;
+        }
+        .profile-image {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--gold);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.4);
+            margin-bottom: 1.5rem;
+        }
+        .profile-name {
+            color: white;
+            font-size: 1.75rem;
+            font-weight: 800;
+            margin-bottom: 0.25rem;
+        }
+        .profile-title {
+            color: rgba(255,255,255,0.7);
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        .credentials-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+        .credential-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(201, 162, 39, 0.15);
+            border: 2px solid var(--gold);
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--gold);
+        }
+        .credential-badge.vita {
+            background: rgba(40, 167, 69, 0.2);
+            border-color: #7bed9f;
+            color: #7bed9f;
+        }
+        .profile-social {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+        }
+        .profile-social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background: rgba(255,255,255,0.1);
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .profile-social a:hover {
+            background: var(--gold);
+            transform: translateY(-3px);
+        }
+        .profile-social svg { width: 22px; height: 22px; }
+
+        /* HERO CONTENT */
+        .hero-content { max-width: 700px; margin: 0 auto; }
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 800;
+            color: white;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+        }
+        .hero-title .gold { color: var(--gold); }
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 2rem;
+        }
+        .free-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, var(--green), #20c997);
+            color: white;
+            font-weight: 800;
+            font-size: 1.1rem;
+            border-radius: 100px;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 30px rgba(40, 167, 69, 0.4);
+        }
+        .hero-cta {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            color: var(--navy);
+            box-shadow: 0 6px 25px rgba(201, 162, 39, 0.5);
+        }
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 40px rgba(201, 162, 39, 0.6);
+        }
+        .btn-secondary {
+            background: rgba(255,255,255,0.1);
+            color: white;
+            border: 2px solid rgba(255,255,255,0.4);
+        }
+        .btn-secondary:hover { background: rgba(255,255,255,0.2); }
+        .hero-contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.7);
+        }
+        .hero-contact a {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .hero-contact a:hover { text-decoration: underline; }
+
+        /* TRUST BAR */
+        .trust-bar {
+            background: white;
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--gray-200);
+        }
+        .trust-bar-inner {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--gray-700);
+        }
+        .trust-item svg { width: 22px; height: 22px; color: var(--gold); }
+
+        /* SECTIONS */
+        .section { padding: 4rem 2rem; }
+        .section-dark { background: var(--navy); color: white; }
+        .section-alt { background: white; }
+        .container { max-width: 1100px; margin: 0 auto; }
+        .section-header { text-align: center; max-width: 700px; margin: 0 auto 3rem; }
+        .section-label {
+            display: inline-block;
+            padding: 0.5rem 1.25rem;
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            color: var(--navy);
+            font-weight: 700;
+            font-size: 0.85rem;
+            border-radius: 100px;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        .section-title { font-size: clamp(1.75rem, 4vw, 2.5rem); margin-bottom: 1rem; }
+        .section-subtitle { font-size: 1.1rem; color: var(--gray-500); }
+        .section-dark .section-subtitle { color: rgba(255,255,255,0.7); }
+
+        /* PROCESS INTRO */
+        .process-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            padding: 2rem;
+            background: var(--green-light);
+            border-radius: 16px;
+            border: 3px solid var(--green);
+        }
+        .process-intro h3 { color: #155724; font-size: 1.4rem; margin-bottom: 0.5rem; }
+        .process-intro p { color: var(--gray-700); font-size: 1.1rem; }
+
+        /* TRACK CARDS */
+        .tracks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        .track-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        .track-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 5px;
+        }
+        .track-card.track-1::before { background: linear-gradient(90deg, #2563eb, #3b82f6); }
+        .track-card.track-2::before { background: linear-gradient(90deg, #7c3aed, #a78bfa); }
+        .track-card.track-3::before { background: linear-gradient(90deg, #059669, #34d399); }
+        .track-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            font-weight: 800;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .track-1 .track-number { background: var(--blue-light); color: var(--blue); }
+        .track-2 .track-number { background: #ede9fe; color: #7c3aed; }
+        .track-3 .track-number { background: #d1fae5; color: #059669; }
+        .track-card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; color: var(--gray-900); }
+        .track-card .track-subtitle { color: var(--gray-500); font-size: 0.9rem; margin-bottom: 1.25rem; }
+        .track-card .track-who { background: var(--gray-100); padding: 1rem; border-radius: 10px; margin-bottom: 1.25rem; }
+        .track-who-label { font-weight: 700; color: var(--gray-700); font-size: 0.8rem; margin-bottom: 0.5rem; }
+        .track-who p { color: var(--gray-700); font-size: 0.9rem; }
+        .track-steps { list-style: none; }
+        .track-steps li {
+            position: relative;
+            padding-left: 1.75rem;
+            padding-bottom: 0.75rem;
+            margin-bottom: 0.75rem;
+            border-bottom: 1px solid var(--gray-200);
+            font-size: 0.9rem;
+        }
+        .track-steps li:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        .track-steps li::before { content: '✓'; position: absolute; left: 0; color: var(--green); font-weight: bold; }
+        .track-steps li strong { display: block; color: var(--gray-900); margin-bottom: 0.15rem; }
+        .track-result {
+            margin-top: 1.25rem;
+            padding: 0.75rem;
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            border-radius: 8px;
+            text-align: center;
+        }
+        .track-result p { color: var(--navy); font-weight: 700; font-size: 0.9rem; }
+
+        /* SERVICES GRID */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+        .service-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .service-card:hover { background: rgba(255,255,255,0.1); }
+        .service-card h3 { color: var(--gold); font-size: 1.1rem; margin-bottom: 0.75rem; }
+        .service-list { list-style: none; }
+        .service-list li {
+            padding: 0.35rem 0;
+            padding-left: 1.25rem;
+            position: relative;
+            color: rgba(255,255,255,0.9);
+            font-size: 0.9rem;
+        }
+        .service-list li::before { content: '✓'; position: absolute; left: 0; color: var(--gold); }
+
+        /* CTA SECTION */
+        .cta-section { background: linear-gradient(135deg, var(--gold), var(--gold-light)); padding: 4rem 2rem; text-align: center; }
+        .cta-content { max-width: 600px; margin: 0 auto; }
+        .cta-title { font-size: clamp(1.75rem, 4vw, 2.5rem); color: var(--navy); margin-bottom: 1rem; }
+        .cta-subtitle { font-size: 1.1rem; color: var(--navy); opacity: 0.8; margin-bottom: 1.5rem; }
+        .cta-phone {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--navy);
+            text-decoration: none;
+            margin-bottom: 1.5rem;
+        }
+        .btn-dark { background: var(--navy); color: white; }
+        .btn-dark:hover { background: var(--navy-light); }
+
+        /* FOOTER */
+        footer { background: var(--navy); color: white; padding: 3rem 2rem; text-align: center; }
+        .footer-logo { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1rem; }
+        .footer-logo img { height: 50px; border-radius: 8px; }
+        .footer-logo h3 { font-size: 1.5rem; color: var(--gold); }
+        footer p { color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin: 1.5rem 0; }
+        .footer-links a { color: var(--gold); text-decoration: none; font-weight: 600; }
+        .footer-links a:hover { text-decoration: underline; }
+        .footer-bottom {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.5);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .header { padding: 1rem; }
+            .header-logo img { height: 45px; }
+            .header-logo-text h1 { font-size: 1.4rem; }
+            .hero { padding: 3rem 1.5rem; }
+            .profile-image { width: 180px; height: 180px; }
+            .section { padding: 3rem 1.5rem; }
+            .trust-bar-inner { gap: 1rem; }
+            .trust-item { font-size: 0.8rem; }
+            .cta-phone { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CENTERED HEADER WITH LOGO -->
+    <header class="header">
+        <div class="header-logo">
+            <img src="knightfin_logo.jpg" alt="Knight Financial Logo">
+            <div class="header-logo-text">
+                <h1>FCACP™</h1>
+                <span>Tax Resolution Services</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <!-- CENTERED PROFILE PHOTO -->
+        <div class="profile-section">
+            <img src="PRO_PIC.png" alt="Raheem Sanders - Tax Professional" class="profile-image">
+            <h2 class="profile-name">Raheem Sanders</h2>
+            <p class="profile-title">Founder & CEO, Knight Financial LLC</p>
+            <div class="credentials-row">
+                <span class="credential-badge vita">🎓 IRS VITA CERTIFIED</span>
+                <span class="credential-badge">✓ PTIN: P03444252</span>
+                <span class="credential-badge">✓ Form 2848 Auth</span>
+            </div>
+            <div class="profile-social">
+                <a href="https://www.linkedin.com/in/raheem-sanders-b99345398/" target="_blank" title="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="mailto:raheem@knightfin.org" title="Email">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+                <a href="tel:+13349389171" title="Call">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- HERO CONTENT -->
+        <div class="hero-content">
+            <h1 class="hero-title">IRS Problems? <span class="gold">I Handle It.</span></h1>
+            <p class="hero-subtitle">
+                Tax liens, back taxes, unfiled returns—whatever you're facing, we start with a FREE analysis and build a custom plan based on what you can afford. <strong>No one gets turned away.</strong>
+            </p>
+            <div class="free-badge">✓ FREE Tax Lien & IRS Analysis — No Obligation</div>
+            <div class="hero-cta">
+                <a href="tel:+13349389171" class="btn btn-primary">📞 Call (334) 938-9171</a>
+                <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
+            </div>
+            <div class="hero-contact">
+                <span>📍 Tuskegee, AL — Serving Nationwide</span>
+                <a href="mailto:raheem@knightfin.org">raheem@knightfin.org</a>
+                <a href="https://www.linkedin.com/in/raheem-sanders-b99345398/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <div class="trust-bar">
+        <div class="trust-bar-inner">
+            <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> IRS Licensed</div>
+            <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Free Analysis</div>
+            <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> Custom Payment Plans</div>
+            <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg> No One Turned Away</div>
+            <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> All 50 States</div>
+        </div>
+    </div>
+
+    <!-- HOW IT WORKS -->
+    <section class="section section-alt" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">How It Works</span>
+                <h2 class="section-title">Three Paths to Freedom From IRS Debt</h2>
+                <p class="section-subtitle">Every situation is different. After your FREE analysis, we determine which track fits and build a custom plan you can afford.</p>
+            </div>
+            <div class="process-intro">
+                <h3>🎯 Everything Starts FREE</h3>
+                <p>We pull your IRS transcripts, analyze your situation, check bankruptcy eligibility, and give you a complete picture—<strong>at no cost and no obligation</strong>.</p>
+            </div>
+            <div class="tracks-grid">
+                <div class="track-card track-1">
+                    <div class="track-number">1</div>
+                    <h3>Full Tax Resolution</h3>
+                    <p class="track-subtitle">For people with unfiled returns and IRS debt</p>
+                    <div class="track-who"><p class="track-who-label">WHO THIS IS FOR:</p><p>You have a tax lien, haven't filed all your returns, and the IRS is coming after you.</p></div>
+                    <ul class="track-steps">
+                        <li><strong>Free IRS Analysis</strong>We pull your transcripts and see exactly what you owe.</li>
+                        <li><strong>File Back Returns</strong>We prepare and file any missing tax returns.</li>
+                        <li><strong>Payment Plan Setup</strong>We negotiate CNC, Installment, or OIC.</li>
+                        <li><strong>Lien Withdrawal</strong>We request lien withdrawal from public record.</li>
+                        <li><strong>Ongoing Protection</strong>Credit monitoring and annual tax prep.</li>
+                    </ul>
+                    <div class="track-result"><p>RESULT: Compliant, protected, lien removed</p></div>
+                </div>
+                <div class="track-card track-2">
+                    <div class="track-number">2</div>
+                    <h3>Bankruptcy + Resolution</h3>
+                    <p class="track-subtitle">When bankruptcy can wipe out tax debt</p>
+                    <div class="track-who"><p class="track-who-label">WHO THIS IS FOR:</p><p>You've filed returns but owe a lot. Some debt may qualify for discharge.</p></div>
+                    <ul class="track-steps">
+                        <li><strong>Free Bankruptcy Check</strong>We calculate which years qualify for discharge.</li>
+                        <li><strong>Build Your Case File</strong>Complete documentation with transcripts.</li>
+                        <li><strong>Attorney Referral</strong>We connect you with a bankruptcy attorney.</li>
+                        <li><strong>Resolve Surviving Lien</strong>Liens survive bankruptcy—we handle it.</li>
+                        <li><strong>Credit Rebuilding</strong>Post-bankruptcy monitoring and repair.</li>
+                    </ul>
+                    <div class="track-result"><p>RESULT: Debt discharged, lien resolved</p></div>
+                </div>
+                <div class="track-card track-3">
+                    <div class="track-number">3</div>
+                    <h3>Legal Referral Track</h3>
+                    <p class="track-subtitle">When you need an attorney</p>
+                    <div class="track-who"><p class="track-who-label">WHO THIS IS FOR:</p><p>Audits, criminal investigations, trust fund penalties, or legal situations.</p></div>
+                    <ul class="track-steps">
+                        <li><strong>Free Red Flag Analysis</strong>We identify if you need legal help.</li>
+                        <li><strong>Case File Preparation</strong>We build your file FREE for an attorney.</li>
+                        <li><strong>Attorney Referral</strong>We connect you with a tax attorney.</li>
+                        <li><strong>Return After Resolution</strong>Come back for remaining balance.</li>
+                        <li><strong>Full Completion</strong>Payment plan and ongoing protection.</li>
+                    </ul>
+                    <div class="track-result"><p>RESULT: Legal issues handled, then full resolution</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section section-dark" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Services</span>
+                <h2 class="section-title">What We Handle</h2>
+                <p class="section-subtitle">Tax preparation, IRS resolution, and credit repair—all covered.</p>
+            </div>
+            <div class="services-grid">
+                <a href="#how-it-works" class="service-card"><h3>Tax Preparation</h3><ul class="service-list"><li>Individual Returns (1040)</li><li>Back Tax Filing</li><li>Self-Employment / Schedule C</li><li>Farm Income / Schedule F</li><li>State Returns</li></ul></a>
+                <a href="#how-it-works" class="service-card"><h3>IRS Resolution</h3><ul class="service-list"><li>Installment Agreements</li><li>Currently Not Collectible</li><li>Offer in Compromise</li><li>Lien Withdrawal</li><li>Penalty Abatement</li></ul></a>
+                <a href="#how-it-works" class="service-card"><h3>Lien Services</h3><ul class="service-list"><li>Federal Tax Lien Withdrawal</li><li>Lien Discharge</li><li>Lien Subordination</li><li>Credit Bureau Removal</li></ul></a>
+                <a href="#how-it-works" class="service-card"><h3>Credit & Monitoring</h3><ul class="service-list"><li>3-Bureau Monitoring</li><li>FCRA Dispute Letters</li><li>Score Optimization</li><li>Annual Tax Prep Included</li></ul></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section-alt" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">About</span>
+                <h2 class="section-title">Why Work With Me?</h2>
+            </div>
+            <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 1.1rem; color: var(--gray-700); margin-bottom: 1.25rem;">I founded Knight Financial LLC in 2020 because I saw how many people were crushed by tax debt. The big companies charge $10,000+ and don't care if you can't afford it.</p>
+                <p style="font-size: 1.1rem; color: var(--gray-700); margin-bottom: 1.25rem;"><strong>My approach is different.</strong> Free analysis first. Then we build a payment plan based on what you can actually afford. If you can only pay $1,000—I'll work with you. No one gets turned away.</p>
+                <p style="font-size: 1.1rem; color: var(--gray-700);">IRS-licensed (PTIN P03444252), VITA certified, Form 2848 authorized. Based in Tuskegee, Alabama—serving clients nationwide.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2 class="cta-title">Ready for Your FREE Analysis?</h2>
+            <p class="cta-subtitle">No obligation. No pressure. Just answers and a plan you can afford.</p>
+            <a href="tel:+13349389171" class="cta-phone">📞 (334) 938-9171</a>
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+                <a href="mailto:raheem@knightfin.org" class="btn btn-dark">✉️ Email Me</a>
+                <a href="https://www.linkedin.com/in/raheem-sanders-b99345398/" target="_blank" class="btn btn-dark">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">
+            <img src="knightfin_logo.jpg" alt="Knight Financial Logo">
+            <h3>FCACP™</h3>
+        </div>
+        <p>Federal Consumer Advocacy & Compliance Partners</p>
+        <p>A Knight Financial LLC Company</p>
+        <p style="margin-top: 1rem;"><strong>Raheem Sanders</strong> | PTIN: P03444252 | VITA Certified</p>
+        <div class="footer-links">
+            <a href="tel:+13349389171">(334) 938-9171</a>
+            <a href="mailto:raheem@knightfin.org">raheem@knightfin.org</a>
+            <a href="https://www.linkedin.com/in/raheem-sanders-b99345398/" target="_blank">LinkedIn</a>
+            <a href="https://fcacp.org">FCACP.org</a>
+        </div>
+        <div class="footer-bottom">© 2025 Knight Financial LLC. FCACP™ is a trademark of Knight Financial LLC</div>
+    </footer>
+
+</body>
+</html>
